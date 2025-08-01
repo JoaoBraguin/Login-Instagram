@@ -1,0 +1,220 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+
+
+
+
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(233, 233, 233);
+    width: 350px;
+    height: 420px;
+
+    img {
+        margin-top: 30px;
+        padding: 40px;
+        width: 190px;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        margin-top: 50px;
+
+    }
+
+    .inputBox {
+        position: relative;
+        margin-top: 5px;
+    }
+
+    .inputBox input {
+        width: 280px;
+        padding: 10px 10px 10px 10px;
+        background-color: #FAFAFA;
+        border: 0.5px solid rgb(226, 226, 226);
+        border-radius: 1px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .inputBox label {
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        color: #737373;
+        font-size: 12px;
+        pointer-events: none;
+        transition: 0.2s ease all;
+    }
+
+    /* Quando input estiver focado ou preenchido */
+    .inputBox input:focus+label,
+    .inputBox input:not(:placeholder-shown)+label {
+        top: -8px;
+        left: 8px;
+        font-size: 12px;
+        background-color: #FAFAFA;
+        padding: 0 4px;
+        color: #555;
+    }
+
+
+    button {
+        background-color: #808DFB;
+        border: 0;
+        padding: 8px;
+        margin-top: 10px;
+        width: 287px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .line {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: auto;
+        margin-top: 10px;
+
+        p {
+            font-size: 13px;
+            font-family: "Open Sans", sans-serif;
+            color: #7b7b7b;
+            font-weight: 600;
+        }
+
+        hr {
+            width: 100px;
+            border: 0.5px solid #DBDBDB;
+
+        }
+
+    }
+
+    a {
+
+
+        color: #0097F6;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        /* svg{
+            height: 100px;
+            width: 100px;
+        } */
+
+
+
+
+
+    }
+
+    .senha {
+        color: black;
+        margin-top: 30px;
+        height: 20px;
+        margin: 28px;
+        font-weight: 500;
+        font-size: 14px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+
+}
+
+.conta {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .cadastrar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(233, 233, 233);
+        height: 60px;
+        width: 300px;
+        flex-wrap: wrap;
+        gap: 2px;
+        margin: 10px;
+        width: 350px;
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+        }
+
+        a {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            color: #416EF9;
+            text-decoration: none;
+            font-size: 14px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+
+    a {
+        font-size: 12px;
+        color: #737373;
+        text-decoration: none;
+        margin: 6px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.last {
+    margin-top: 10px;
+
+    a {
+        font-size: 12px;
+        color: #737373;
+        text-decoration: none;
+        margin: 6px;
+        padding: 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
